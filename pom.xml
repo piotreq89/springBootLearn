@@ -31,13 +31,43 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
+		</dependency>													<!--Biblioteki wykorzystane w projekcie-->
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId> 		<!--JPA uniwersalny system do korzystania z baz danych, pod spodem jes
+																Hibernate albo OpenJPA
+																* Spring Korzysta z Hibernate-->
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 
-		<dependency>													<!--Biblioteki wykorzystane w projekcie-->
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-io</artifactId>				<!--Udostępnia zestaw operacji na plikach miedzy innymi kopiowanie danych z URL do pliku-->
+			<version>1.3.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId> 			<!--Biblioteka z pakietu spring boot która umożliwia mapowanie
+																	i wystawienie usługi na zewnątrz-->
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
 	</dependencies>														<!---->
 
 	<build>															<!---->
